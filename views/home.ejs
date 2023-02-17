@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Send OTP App</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">List of Contacts</a></li>
+				<li><a href="#">List of Messages Sent</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="contact-list">
+			<h2>List of Contacts</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Last Name</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% contacts.forEach(function(contact) { %>
+					<tr>
+						<td><%= contact.firstName %></td>
+						<td><%= contact.lastName %></td>
+					</tr>
+					<% }); %>
+				</tbody>
+			</table>
+		</section>
+		<section class="message-sent-list">
+			<h2>List of Messages Sent</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Last Name</th>
+						<th>Time Sent</th>
+						<th>OTP Sent</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% messages.forEach(function(message) { %>
+					<tr>
+						<td><%= message.name %></td>
+						<td><%= message.lastname %></td>
+						<td><%= message.timeSent %></td>
+						<td><%= message.otpSent %></td>
+					</tr>
+					<% }); %>
+				</tbody>
+			</table>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Send OTP App</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>

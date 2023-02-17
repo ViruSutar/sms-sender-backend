@@ -1,0 +1,73 @@
+/* Global styles */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1rem;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.8rem;
+}
+
+main {
+	margin: 4rem auto;
+	max-width: 80rem;
+}
+
+section {
+	margin-bottom: 4rem;
+}
+
+.contact-list table,
+.message-sent-list table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.contact-list table th,
+.contact-list table td,
+.message-sent-list table th,
+.message-sent-list table td {
+	padding: 1rem;
+	text-align: left;
+}
+
+.contact-list table th,
+.message-sent-list table th {
+	background-color: #f2f2f2;
+	color: #333;
+}
+
+.contact-list table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+/* .message-sent */
